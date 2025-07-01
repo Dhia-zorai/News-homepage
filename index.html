@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>News homepage</title>
+
+    <style>
+      :root {
+        --Soft-orange: hsl(35, 77%, 62%);
+        --Soft-red: hsl(5, 85%, 63%);
+        --Off-white: hsl(36, 100%, 99%);
+        --Grayish-blue: hsl(233, 8%, 79%);
+        --Dark-grayish-blue: hsl(236, 13%, 42%);
+        --Very-dark-blue: hsl(240, 100%, 5%);
+      }
+      @font-face {
+        font-family: "Inter";
+        src: url(assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+        font-style: normal;
+        font-weight: 400 700 800;
+      }
+      body {
+        background-color: var(--Off-white);
+        padding: 0;
+        margin: 0;
+        min-height: 100dvh;
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+      }
+      .container {
+        width: 85dvw;
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem;
+        margin: 1.5rem 0;
+      }
+      nav {
+        display: none;
+        background-color: var(--Off-white);
+        height: 100dvh;
+        width: 60dvw;
+      }
+
+      nav.activ {
+        display: flex;
+      }
+
+      nav ul {
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        gap: 30px;
+      }
+      li {
+        list-style: none;
+      }
+      button {
+        outline: none;
+        border: none;
+      }
+      main button {
+        background-color: var(--Soft-red);
+        padding: 14px 32px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+      h1 {
+        font-size: 32px;
+        font-weight: 800;
+      }
+      p {
+        font-size: 15px;
+        font-weight: 400px;
+        color: var(--Dark-grayish-blue);
+        line-height: 1.7rem;
+      }
+      main {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .web-image {
+        width: auto;
+        max-height: 300px;
+      }
+
+      aside {
+        background-color: var(--Very-dark-blue);
+        color: var(--Off-white);
+        padding: 18px;
+      }
+
+      h2 {
+        color: var(--Soft-orange);
+        margin-top: 0;
+      }
+
+      h3 {
+        margin-bottom: 12px;
+        font-weight: 700;
+      }
+
+      aside p {
+        margin: 0;
+        line-height: 1.5rem;
+        color: var(--Grayish-blue);
+      }
+
+      hr {
+        margin: 30px auto;
+      }
+      section ul {
+        padding: 0;
+      }
+
+      li article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 22px;
+      }
+
+      li article img {
+        max-height: 145px;
+      }
+
+      h4 {
+        font-size: 35px;
+        font-weight:700;
+        margin-top: 0;
+        margin-bottom: 16px;
+        color: var(--Soft-red);
+      }
+
+      h5 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 16px;
+        color: var(--Very-dark-blue);
+      }
+
+      
+
+      section li{
+        margin-bottom: 30px;
+       
+      }
+
+      
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="assets/images/logo.svg" alt="News Homepage Logo" />
+        <button><img src="assets/images/icon-menu.svg" alt="Menu" /></button>
+      </header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </nav>
+      <main>
+        <section>
+          <article>
+            <img
+              src="assets/images/image-web-3-mobile.jpg"
+              alt="Web 3.0 Mobile"
+              class="web-image"
+            />
+            <img
+              src="assets/images/image-web-3-desktop.jpg"
+              hidden
+              alt="Web 3.0 Desktop"
+            />
+            <h1>The Bright Future of Web 3.0?</h1>
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button>Read more</button>
+          </article>
+        </section>
+        <aside>
+          <article>
+            <h2>New</h2>
+            <section>
+              <h3>Hydrogen VS Electric Cars</h3>
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </section>
+            <hr />
+            <section>
+              <h3>The Downsides of AI Artistry</h3>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </section>
+            <hr />
+            <section>
+              <h3>Is VC Funding Drying Up?</h3>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </section>
+          </article>
+        </aside>
+        <section>
+          <ul>
+            <li>
+              <article>
+                <img src="assets/images/image-retro-pcs.jpg" alt="Retro PCs" />
+                <div class="no-image">
+                  <h4>01</h4>
+                  <h5>Reviving Retro PCs</h5>
+                  <p>What happens when old PCs are given modern upgrades?</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article>
+                <img
+                  src="assets/images/image-top-laptops.jpg"
+                  alt="Top Laptops"
+                />
+                <div class="no-image">
+                  <h4>02</h4>
+                  <h5>Top 10 Laptops of 2022</h5>
+                  <p>Our best picks for various needs and budgets.</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article>
+                <img
+                  src="assets/images/image-gaming-growth.jpg"
+                  alt="Gaming Growth"
+                />
+                <div class="no-image">
+                  <h4>03</h4>
+                  <h5>The Growth of Gaming</h5>
+                  <p>How the pandemic has sparked fresh opportunities.</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
