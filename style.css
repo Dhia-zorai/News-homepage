@@ -234,6 +234,7 @@ article h5:hover {
     grid-row: auto !important;
     display: block;
     margin-bottom: 0;
+    margin-top: 2.5rem;
   }
   main > * {
     margin-bottom: 0;
